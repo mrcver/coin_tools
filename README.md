@@ -14,11 +14,13 @@
 
 修改配置 `config/api.json` 中 `key` 与 `secret` 对应的值， 填写上币安api的配置.
 
+```json
 {
-"base_url": "https://api2.binance.com",
-"key": "xxx",
-"secret": "xxxx"
+  "base_url": "https://api2.binance.com",
+  "key": "xxxx",
+  "secret": "xxxx"
 }
+```
 
 ## 环境安装
 
@@ -39,9 +41,9 @@ python main.py
 
 ## 常见问题
 
-### 接口无法访问， 可以在配置文件`config/api.json`中增加
+### 接口无法访问， 可以在配置文件`config/api.json`中增加代理设置, 注意`json`格式
 
-> "proxies": "https://127.0.0.1:1080"
+> "proxies": "http://127.0.0.1:1080"
 
 ### 取消窗口置顶
 
